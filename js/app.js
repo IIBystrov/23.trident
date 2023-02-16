@@ -8,14 +8,18 @@ let headerHeight = `${header.offsetHeight}px`;
 const main = document.querySelector(".page__main");
 main.style.paddingTop = headerHeight;
 
-const navActive = document.querySelector(".header__nav--active");
-navActive.style.top = headerHeight;
+const nav = document.querySelector(".header__nav");
+nav.style.top = headerHeight;
+
+const navListInsert = document.querySelector(".nav__list--insert");
+
+const navInsertLink = document.querySelector(".nav__link--insert");
+const navInsertIcon = document.querySelector(".link__icon--nav");
 
 const menu = document.querySelector(".header__menu");
 
 const slider = document.querySelector(".slider__list");
 const sliderItems = Array.from(slider.children);
-
 
 const btnNext = document.querySelector(".controls__btn--next");
 const btnPrev = document.querySelector(".controls__btn--prev");
@@ -24,6 +28,8 @@ const btnPrev = document.querySelector(".controls__btn--prev");
 // eventListener
 
 menu.addEventListener("click", toggleMenu);
+
+navInsertLink.addEventListener("click", showNavInsert);
 
 btnNext.addEventListener("click", showNewSlide);
 btnPrev.addEventListener("click", showPrevSlide);
@@ -36,6 +42,13 @@ btnPrev.addEventListener("click", showPrevSlide);
 function toggleMenu(evt) {
     evt.preventDefault();
     menu.classList.toggle("menu--open");
+    nav.classList.toggle("header__nav--active");
+}
+
+function showNavInsert(evt) {
+    evt.preventDefault();
+    navListInsert.classList.toggle("nav__list--insert-active");
+    navInsertIcon.classList.toggle("link__icon--nav-open");
 }
 
 // slider
