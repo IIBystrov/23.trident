@@ -1,0 +1,200 @@
+/* fonts */
+
+/* avenir-next */
+/* regular */
+
+@font-face {
+    font-display: swap;
+    font-family:"Avenir-next";
+    src: local("Avenir-next regular"),
+        url("../fonts/avenir-next/regular/avenirnextcyr-regular.eot"),
+        url("../fonts/avenir-next/regular/avenirnextcyr-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/avenir-next/regular/avenirnextcyr-regular.woff2") format("woff2"),
+        url("../fonts/avenir-next/regular/avenirnextcyr-regular.woff") format("woff"),
+        url("../fonts/avenir-next/regular/avenirnextcyr-regular.ttf") format("truetype"),
+        url("../fonts/avenir-next/regular/avenirnextcyr-regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* gilroy */
+/* gilroylight */
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: local("Gilroy light"),
+        url("../fonts/gilroy/light/gilroy-light.eot"),
+        url("../fonts/gilroy/light/gilroy-light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/gilroy/light/gilroy-light.woff2") format("woff2"),
+        url("../fonts/gilroy/light/gilroy-light.woff") format("woff"),
+        url("../fonts/gilroy/light/gilroy-light.ttf") format("truetype"),
+        url("../fonts/gilroy/light/gilroy-light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* gilroy regular */
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: local("Gilroy regular"),
+        url("../fonts/gilroy/regular/gilroy-regular.eot"),
+        url("../fonts/gilroy/regular/gilroy-regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/gilroy/regular/gilroy-regular.woff2") format("woff2"),
+        url("../fonts/gilroy/regular/gilroy-regular.woff") format("woff"),
+        url("../fonts/gilroy/regular/gilroy-regular.ttf") format("truetype"),
+        url("../fonts/gilroy/regular/gilroy-regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* gilroy medium */
+
+@font-face {
+    font-display: swap;
+    font-family: "Gilroy";
+    src: local("Gilroy medium"),
+        url("../fonts/gilroy/medium/gilroy-medium.eot"),
+        url("../fonts/gilroy/medium/gilroy-medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/gilroy/medium/gilroy-medium.woff2") format("woff2"),
+        url("../fonts/gilroy/medium/gilroy-medium.woff") format("woff"),
+        url("../fonts/gilroy/medium/gilroy-medium.ttf") format("truetype"),
+        url("../fonts/gilroy/medium/gilroy-medium.svg") format("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* ubuntu */
+/* ubuntu regular */
+
+@font-face {
+    font-display: swap;
+    font-family: "Ubuntu";
+    src: local("Ubuntu regular"),
+        url("../fonts/ubuntu/regular/ubuntu_regular.eot"),
+        url("../fonts/ubuntu/regular/ubuntu_regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ubuntu/regular/ubuntu_regular.woff2") format("woff2"),
+        url("../fonts/ubuntu/regular/ubuntu_regular.woff") format("woff"),
+        url("../fonts/ubuntu/regular/ubuntu_regular.ttf") format("truetype"),
+        url("../fonts/ubuntu/regular/ubuntu_regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* ubuntu bold */
+
+@font-face {
+    font-display: swap;
+    font-family: "Ubuntu";
+    src: local("Ubuntu bold"),
+        url("../fonts/ubuntu/bold/ubuntu_bold.eot"),
+        url("../fonts/ubuntu/bold/ubuntu_bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/ubuntu/bold/ubuntu_bold.woff2") format("woff2"),
+        url("../fonts/ubuntu/bold/ubuntu_bold.woff") format("woff"),
+        url("../fonts/ubuntu/bold/ubuntu_bold.ttf") format("trietype"),
+        url("../fonts/ubuntu/bold/ubuntu_bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* inter */
+/* inter regular */
+
+@font-face {
+    font-display: swap;
+    font-family: "Inter";
+    src: local("Inter regular"),
+        url("../fonts/inter/regular/inter_regular.eot"),
+        url("../fonts/inter/regular/inter_regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/inter/regular/inter_regular.woff2") format("woff2"),
+        url("../fonts/inter/regular/inter_regular.woff") format("woff"),
+        url("../fonts/inter/regular/inter_regular.ttf") format("truetype"),
+        url("../fonts/inter/regular/inter_regular.svg") format("svg");
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* lato */
+/* lato extralight */
+
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: local("Lato extralight"),
+        url("../fonts/lato/extralight/lato_extralight.eot"),
+        url("../fonts/lato/extralight/lato_extralight.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lato/extralight/lato_extralight.woff2") format("woff2"),
+        url("../fonts/lato/extralight/lato_extralight.woff") format("woff"),
+        url("../fonts/lato/extralight/lato_extralight.ttf") format("truetype"),
+        url("../fonts/lato/extralight/lato_extralight.svg") format("svg");
+    font-weight: 200;
+    font-style: normal;
+}
+
+/* lato light */
+
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: local("Lato light"),
+        url("../fonts/lato/light/lato_light.eot"),
+        url("../fonts/lato/light/lato_light.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lato/light/lato_light.woff2") format("woff2"),
+        url("../fonts/lato/light/lato_light.woff") format("woff"),
+        url("../fonts/lato/light/lato_light.ttf") format("truetype"),
+        url("../fonts/lato/light/lato_light.svg") format("svg");
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* lato regular */
+
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: local("Lato regular"),
+        url("../fonts/lato/regular/lato_regular.eot"),
+        url("../fonts/lato/regular/lato_regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lato/regular/lato_regular.woff2") format("woff2"),
+        url("../fonts/lato/regular/lato_regular.woff") format("woff"),
+        url("../fonts/lato/regular/lato_regular.ttf") format("truetype"),
+        url("../fonts/lato/regular/lato_regular.svg") format("svg");
+    font-weight:400;
+    font-style: normal;
+}
+
+/* lato medium */
+
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: local("Loto medium"),
+        url("../fonts/lato/medium/lato_medium.eot"),
+        url("../fonts/lato/medium/lato_medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lato/medium/lato_medium.woff2") format("woff2"),
+        url("../fonts/lato/medium/lato_medium.woff") format("woff"),
+        url("../fonts/lato/medium/lato_medium.ttf") format("truetype"),
+        url("../fonts/lato/medium/lato_medium.svg") foprmat("svg");
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* lato bold */
+
+@font-face {
+    font-display: swap;
+    font-family: "Lato";
+    src: local("Lato bold"),
+        url("../fonts/lato/bold/lato_bold.eot"),
+        url("../fonts/lato/bold/lato_bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/lato/bold/lato_bold.woff2") format("woff2"),
+        url("../fonts/lato/bold/lato_bold.woff") format("woff"),
+        url("../fonts/lato/bold/lato_bold.ttf") format("truetype"),
+        url("../fonts/lato/bold/lato_bold.svg") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+
