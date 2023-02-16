@@ -110,7 +110,8 @@ button {
     cursor: pointer;
 }
    
-img {
+img,
+picture {
     display: block;
        
     pointer-events: none;
