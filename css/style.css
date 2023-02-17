@@ -203,6 +203,7 @@
 :root {
     --default-bg: #ffffff;
     --primary-bg: #00204a;
+    --light-mask-bg: rgba(255, 255, 255, 0.2);
 
     --accent-link-bg: #f4d059;
 
@@ -503,6 +504,10 @@
         margin: 0 0 23.22px;
     }
 
+    .slider__title {
+        display: none;
+    }
+
     .slider__container {
         position: relative;
     }
@@ -574,6 +579,12 @@
 
 
     /* .catalogue */
+
+    .main__catalogue {
+        margin: 0 0 40px;
+
+        width: 100%;
+    }
 
     .catalogue__header {
         margin: 0 0 48.38px;
@@ -671,6 +682,66 @@
     .btn__text {
         position: relative;
         z-index: 1;
+    }
+
+
+    /* .about */
+
+    .main__about {
+        width: 100%;
+    }
+
+    .about__layer-container {
+        background: var(--light-mask-bg);
+        filter: blur(2px);
+    }
+
+    .about__layer {
+        position: relative;
+        z-index: -1;
+        
+        display: block;
+
+        width: 90%;
+    }
+
+    .about__content {
+        position: relative;
+
+        padding: 108.15px 53.04px 88.53px 28.5px;
+
+        background: var(--primary-bg);
+    }
+
+    .subtitle--accent {
+        font-size: 1.71em;
+        line-height: 1.18;
+        color: var(--light-font-color);
+    }
+
+    .about__subtitle {
+        margin: 0 0 16.34px;
+    }
+
+    .about__description {
+        color: var(--light-font-color);
+    }
+
+    .about__description *:not(:last-child) {
+        margin: 0 0 8px;
+    }
+
+    .about__text {
+        font-weight: 200;
+        line-height: 1.37;
+    }
+
+    .about__img-container {
+        position: absolute;
+        right: 0;
+        top: -190px;
+
+        display: block;
     }
 }
 
