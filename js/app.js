@@ -20,6 +20,7 @@ const menu = document.querySelector(".header__menu");
 
 const slider = document.querySelector(".slider__list");
 const sliderItems = Array.from(slider.children);
+// const sliderItems = slider.querySelectorAll(".slider__img-container");
 
 const btnNext = document.querySelector(".controls__btn--next");
 const btnPrev = document.querySelector(".controls__btn--prev");
