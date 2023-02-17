@@ -239,20 +239,24 @@
 
                 <div class="main__inner inner">
 
-                    <section class="page__catalogue catalogue">
+                    <section class="main__catalogue catalogue">
 
                         <header class="catalogue__header">
     
-                            <h2 class="catalogue__subtitle subtitle">Our house designs</h2>
+                            <h2 class="catalogue__title subtitle">Our house designs</h2>
     
                             <div class="catalogue__tabs tabs">
-                                <button class="tabs__btn btn btn--tab btn--tab-active" type="button">Garden rooms</button>
-                                <button class="tabs__btn btn btn--tab" type="button">Мodular houses</button>
+                                <button class="tabs__btn btn btn--tab" type="button" data-tab="#rooms">
+                                    <span class="btn__text">Garden rooms</span>
+                                </button>
+                                <button class="tabs__btn btn btn--tab" type="button" data-tab="#houses">
+                                    <span class="btn__text">Мodular houses</span>
+                                </button>
                             </div>
     
                         </header>
     
-                        <ul class="catalogue__list catalogue__list--rooms">
+                        <ul class="catalogue__list catalogue__list--rooms" id="rooms">
     
                             <li class="catalogue__item">
     
@@ -261,7 +265,7 @@
                                     <img class="catalogue__img" src="img/pictures/catalogue__img--rooms/catalogue__img-1.jpg" alt="">
                                 </picture>
     
-                                <div class="catalogue__header">
+                                <div class="catalogue__content">
     
                                     <h3 class="catalogue__subtitle subtitle--min">Garden room</h3>
     
@@ -280,7 +284,7 @@
                                     <img class="catalogue__img" src="img/pictures/catalogue__img--rooms/catalogue__img-2.jpg" alt="">
                                 </picture>
     
-                                <div class="catalogue__header">
+                                <div class="catalogue__content">
     
                                     <h3 class="catalogue__subtitle subtitle--min">Garden salon</h3>
     
@@ -299,7 +303,7 @@
                                     <img class="catalogue__img" src="img/pictures/catalogue__img--rooms/catalogue__img-3.jpg" alt="">
                                 </picture>
     
-                                <div class="catalogue__header">
+                                <div class="catalogue__content">
     
                                     <h3 class="catalogue__subtitle subtitle--min">Commercial workspace</h3>
     
@@ -313,21 +317,21 @@
     
                         </ul> <!-- /.catalogue__list catalogue__list--rooms -->
     
-                        <ul class="catalogue__list catalogue__list--houses">
+                        <ul class="catalogue__list catalogue__list--houses" id="houses">
     
                             <li class="catalogue__item">
     
                                 <picture class="catalogue__img-container">
-                                    <source class="catalogue__img" srcset="#">
-                                    <img class="catalogue__img" src="#" alt="">
+                                    <source class="catalogue__img" srcset="img/pictures/catalogue__img--rooms/catalogue__img-1.webp">
+                                    <img class="catalogue__img" src="img/pictures/catalogue__img--rooms/catalogue__img-1.jpg" alt="">
                                 </picture>
     
-                                <div class="catalogue__header">
+                                <div class="catalogue__content">
     
-                                    <h3 class="catalogue__subtitle subtitle--min"></h3>
+                                    <h3 class="catalogue__subtitle subtitle--min">Garden room</h3>
     
                                     <div class="catalogue__description">
-                                        <p class="catalogue__text"></p>
+                                        <p class="catalogue__text">A room where you can work, study, and design</p>
                                     </div>
     
                                 </div>
@@ -337,16 +341,16 @@
                             <li class="catalogue__item">
     
                                 <picture class="catalogue__img-container">
-                                    <source class="catalogue__img" srcset="#">
-                                    <img class="catalogue__img" src="#" alt="">
+                                    <source class="catalogue__img" srcset="img/pictures/catalogue__img--rooms/catalogue__img-2.webp">
+                                    <img class="catalogue__img" src="img/pictures/catalogue__img--rooms/catalogue__img-2.jpg" alt="">
                                 </picture>
     
-                                <div class="catalogue__header">
+                                <div class="catalogue__content">
     
-                                    <h3 class="catalogue__subtitle subtitle--min"></h3>
+                                    <h3 class="catalogue__subtitle subtitle--min">Garden salon</h3>
     
                                     <div class="catalogue__description">
-                                        <p class="catalogue__text"></p>
+                                        <p class="catalogue__text">A room where you can work, study, and design</p>
                                     </div>
     
                                 </div>
@@ -356,16 +360,16 @@
                             <li class="catalogue__item">
     
                                 <picture class="catalogue__img-container">
-                                    <source class="catalogue__img" srcset="#">
-                                    <img class="catalogue__img" src="#" alt="">
+                                    <source class="catalogue__img" srcset="img/pictures/catalogue__img--rooms/catalogue__img-3.webp">
+                                    <img class="catalogue__img" src="img/pictures/catalogue__img--rooms/catalogue__img-3.jpg" alt="">
                                 </picture>
     
-                                <div class="catalogue__header">
+                                <div class="catalogue__content">
     
-                                    <h3 class="catalogue__subtitle subtitle--min"></h3>
+                                    <h3 class="catalogue__subtitle subtitle--min">Commercial workspace</h3>
     
                                     <div class="catalogue__description">
-                                        <p class="catalogue__text"></p>
+                                        <p class="catalogue__text">A room where you can work, study, and design</p>
                                     </div>
     
                                 </div>

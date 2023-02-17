@@ -205,8 +205,11 @@
     --primary-bg: #00204a;
 
     --accent-link-bg: #f4d059;
+
     --accent-btn-bg: #f4d059;
     --primary-btn-bg: #00204a;
+
+    --accent-btn-border: #f4d059;
 
     --default-font-family: "Lato", sans-serif;
     --default-font-size: 14px;
@@ -569,8 +572,27 @@
         padding: 0 10px;
     }
 
+
+    /* .catalogue */
+
     .catalogue__header {
-        margin: 0 0 48.35px;
+        margin: 0 0 48.38px;
+    }
+
+    .catalogue__list {
+        display: none;
+    }
+
+    .catalogue__list--active {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .catalogue__img-container {
+        margin: 0 0 4.82px;
     }
 
     .catalogue__img {
@@ -584,7 +606,21 @@
         line-height: 1.73;
     }
 
-    .catalogue__subtitle {
+    .subtitle--min {
+        font-size: 1.42em;
+        line-height: 2.2;
+        text-transform: capitalize;
+    }
+
+    .catalogue__description {
+        line-height: 1.6;
+    }
+
+    .catalogue__description *:not(:last-child) {
+        margin: 0 0 5px;
+    }
+
+    .catalogue__title {
         margin: 0 0 7.11px;
     }
 
@@ -597,15 +633,44 @@
     }
 
     .btn--tab {
+        position: relative;
+
         padding: 0.57em 2em 0.58em 1.31em;
 
         background: var(--default-bg);
+        border: 1px solid var(--accent-btn-border);
         
         font-size: 0.92em;
         font-weight: 400;
         line-height: 2.33;
         text-transform: uppercase;
         color: var(--default-font-color);
+    }
+
+    .btn--tab::after {
+        content: "";
+
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 0;
+
+        display: block;
+
+        width: 9px;
+        height: 100%;
+
+        background: var(--accent-btn-bg);
+    }
+
+    .btn--tab-active::after {
+        left: 0;
+        width: 100%;
+    }
+
+    .btn__text {
+        position: relative;
+        z-index: 1;
     }
 }
 

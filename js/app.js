@@ -25,6 +25,10 @@ const sliderItems = Array.from(slider.children);
 const btnNext = document.querySelector(".controls__btn--next");
 const btnPrev = document.querySelector(".controls__btn--prev");
 
+const catalogue = document.querySelector(".main__catalogue");
+const tabBtns = catalogue.querySelectorAll(".tabs__btn");
+const catalogueList = catalogue.querySelectorAll(".catalogue__list");
+
 
 // eventListener
 
@@ -35,6 +39,7 @@ navInsertLink.addEventListener("click", showNavInsert);
 btnNext.addEventListener("click", showNewSlide);
 btnPrev.addEventListener("click", showPrevSlide);
 
+tabBtns.forEach(onTabClick);
 
 //functions
 
@@ -124,3 +129,27 @@ function showPrevSlide(evt) {
     nextSlide.classList.remove("slider__item--hidden");
     nextSlide.setAttribute("data-active", "");
 };
+
+// tab
+function onTabClick(item) {
+    item.addEventListener("click", function() {
+        let currentTabBtn = item;
+        let btnTabId = currentTabBtn.getAttribute("data-tab");
+        let currentCatalogueList = document.querySelector(btnTabId);
+
+        if(! currentTabBtn.classList.contains("btn--tab-active")) {
+            tabBtns.forEach(function(item) {
+                item.classList.remove("btn--tab-active");
+            });
+    
+            catalogueList.forEach(function(item) {
+                item.classList.remove("catalogue__list--active");
+            });
+            currentTabBtn.classList.add("btn--tab-active");
+            currentCatalogueList.classList.add("catalogue__list--active");
+        };  
+    }); 
+};
+
+// virtual click
+document.querySelector(".btn--tab").click();
