@@ -203,6 +203,7 @@
 :root {
     --default-bg: #ffffff;
     --primary-bg: #00204a;
+    --secondary-bg: #000000;
     --light-mask-bg: rgba(255, 255, 255, 0.2);
 
     --accent-link-bg: #f4d059;
@@ -525,6 +526,9 @@
         display: none;
     }
 
+
+    /* .controls */
+
     .controls__btn {
         position: absolute;
         top: 74.21px;
@@ -635,6 +639,8 @@
         margin: 0 0 7.11px;
     }
 
+    /* tabs */
+
     .catalogue__tabs {
         display: flex;
         flex-direction: row;
@@ -689,6 +695,8 @@
 
     .main__about {
         width: 100%;
+
+        margin: 0 0 48.36px;
     }
 
     .about__layer-container {
@@ -742,6 +750,39 @@
         top: -190px;
 
         display: block;
+    }
+
+    .about__btn {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10.37px;
+    }
+
+    .btn--accent {
+        padding: 0.75em 2.11em;
+        
+        background: var(--accent-btn-bg);
+        border: 1px solid var(--accent-btn-border);
+    }
+
+    .btn--accent .btn__text {
+        font-size: 1.14em;
+        font-weight: 500;
+        line-height: 1.5;
+        color: var(--dark-font-color);
+    }
+
+    .btn--accent .btn__icon {
+        width: 12px;
+        height: 8px;
+
+        fill: var(--secondary-bg);
     }
 }
 
