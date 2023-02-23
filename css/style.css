@@ -212,6 +212,7 @@
     --primary-btn-bg: #00204a;
 
     --accent-btn-border: #f4d059;
+    --accent-link-border: #00142f;
 
     --primary-shadow: #f5f5f5;
 
@@ -987,13 +988,80 @@
         top: 50%;
         transform: translateY(-50%);
     }
-
+    
     .controls__btn--prev {
         left: 0;
     }
 
     .controls__btn--next {
         right: 0%;
+    }
+
+
+    /* .seo */
+
+    .main__seo {
+        width: 100%;
+
+        margin: 0 0 92.53px;
+    }
+
+    .seo {
+        width: 100%;
+    }
+
+    .seo__header {
+        width: 100%;
+
+        margin: 0 0 26.5px;
+    }
+
+    .seo__header *:not(:last-child) {
+        margin: 0 0 10px;
+    }
+
+    .seo__subtitle {
+        margin: 0;
+
+        font-size: 2.57em;
+        line-height: 1.25;
+    }
+
+    .seo__description *:not(:last-child) {
+        margin: 0 0 10px;
+    }
+
+    .seo__lead {
+        font-size: 2.14em;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .seo__content {
+        margin: 0 0 30px;
+    }
+
+    .seo__content *:not(:last-child) {
+        margin: 0 0 10px;
+    }
+    
+    .seo__text {
+        line-height: 1.6;
+    }
+
+    .seo__link {
+        display: block;
+
+        width: 100%;
+    }
+
+    .link--underline {
+        border-bottom: 1px dashed var(--accent-link-border);
+        
+        font-size: 1.14em;
+        font-weight: 500;
+        line-height: 1.89;
+        text-align: left;
     }
 
 }
