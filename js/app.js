@@ -19,6 +19,7 @@ const navInsertIcon = document.querySelector(".link__icon--nav");
 const menu = document.querySelector(".header__menu");
 
 const slider = document.querySelector(".slider__list");
+const sliderArea = slider.querySelectorAll(".slider__img-container");
 const sliderItems = Array.from(slider.children);
 
 const carouselContain = document.querySelector(".main__carousel");
