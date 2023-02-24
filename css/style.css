@@ -425,7 +425,7 @@
         width: 12px;
         height: 8px;
          
-        fill: var(--dark-font-color);
+        fill: var(--default-bg);
     }
 
     .link__icon--nav {
