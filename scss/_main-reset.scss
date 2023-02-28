@@ -1,0 +1,63 @@
+/* main reset */
+         
+*, 
+*::before, 
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+      
+:focus, 
+:active {
+    outline: none;
+}
+      
+a {
+    color: inherit;
+}
+      
+a:focus, 
+a:active {
+    outline: none;
+}
+      
+a, 
+a:visited {
+    text-decoration: none;
+}
+       
+input::-ms-clear {
+    display: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0; 
+}
+      
+address {
+    font-style: normal;
+}
+      
+input, 
+button, 
+textarea {
+    font-family: inherit;
+}
+      
+button {
+    outline: none;
+    border: none;
+
+    color: inherit;
+
+    cursor: pointer;
+}
+   
+img,
+picture {
+    display: block;
+       
+    pointer-events: none;
+}
