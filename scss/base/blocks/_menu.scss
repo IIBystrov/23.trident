@@ -1,0 +1,70 @@
+//.menu
+
+.menu {
+    @media screen and (min-width: 320px) {
+        //.menu__line
+        &__line {
+            position: relative;
+
+            display: block;
+            
+            width: 100%;
+            height: 1px;
+
+            background-color: $primary-btn-bg;
+
+            transition: background-color 0.3s ease-in;
+
+            //.menu__line::before
+            &::before {
+                content: "";
+        
+                position: absolute;
+                left: 0;
+                top: -7.31px;
+
+                display: block;
+
+                width: 100%;
+                height: 100%;
+
+                background: $primary-btn-bg;
+
+                transition: transform 0.3s ease-in;
+            }
+
+            //.menu__line::after
+            &::after {
+                content: "";
+        
+                position: absolute;
+                left: 0;
+                bottom: -7.31px;
+
+                display: block;
+
+                width: 100%;
+                height: 100%;
+
+                background: $primary-btn-bg;
+
+                transition: transform 0.3s ease-in;
+            }
+        }
+
+        //.menu--open .menu__line
+        &--open .menu__line {
+            background: $default-bg;
+
+            // .menu--open .menu__line::before
+            &::before {
+                transform: rotate(45deg) scale(1.25) translate(3px, 5px);
+            }
+
+            // .menu--open .menu__line::after 
+            &::after {
+                transform: rotate(-45deg) scale(1.25) translate(3px, -5px);
+            }
+        }   
+    }
+}

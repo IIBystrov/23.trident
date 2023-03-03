@@ -1,0 +1,97 @@
+//.features
+
+.features {
+    @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+
+        //.featured__subtitle
+        &__subtitle {
+            display: none;
+        }
+        
+        //.features__header
+        &__header {
+            margin: 0 0 44.99px;
+        }
+        
+        //.features__description
+        &__description {
+            // .features__description *:not(:last-child)
+            & *:not(:last-child) {
+                margin: 0 0 10px;
+            }
+        }
+
+        //.features__lead
+        &__lead {
+            font-size: 1.85em;
+            line-height: 1.14;
+        }
+        
+        //.features__list
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 24px;
+        }
+        
+        // .features__item 
+        &__item {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 10px;
+    
+            width: 100%;
+            max-width: 260.29px;
+        }
+
+        //features__subtitle
+        &__subtitle {
+            //.features__subtitle--card
+            &--card {
+                margin: 0 0 13.14px;
+            }
+        }
+
+        //.features__text
+        &__text {
+            line-height: 1.6;
+        } 
+
+        //.features__column
+        &__column {
+            //.features__column--img
+            &--img {
+                display: none;
+            }
+        }
+    }
+    
+    @media screen and (min-width: 1380px) {
+        // .features
+        & {
+            gap: 77.19px;
+        }
+        
+        // .features__column
+        &__column {
+            //.features__oclumn--img
+            &--img {
+                display: block;
+            }
+        }
+        
+        // .features__list
+        &__list {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}

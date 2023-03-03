@@ -1,0 +1,11 @@
+//.copyright
+
+.copyright {
+    @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 43px;
+    }
+}

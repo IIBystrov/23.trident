@@ -1,0 +1,25 @@
+// .social
+
+.social {
+    @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20.25px;  
+        
+        //.social__link
+        &__link {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        //.social__icon
+        &__icon {
+            flex: 0 0 20px;
+            height: 20px;
+        }
+    }  
+}

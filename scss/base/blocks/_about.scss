@@ -1,0 +1,120 @@
+//.about
+
+.about {
+    @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+
+        //.about__layer-container
+        &__layer-container {
+            background: $light-mask-bg;
+            filter: blur(2px);
+        }
+
+        //.about__layer
+        &__layer {
+            position: relative;
+            z-index: -1;
+            
+            display: block;
+    
+            width: 90%;
+        }
+
+        //.about__content
+        &__content {
+            position: relative;
+    
+            padding: 0 0 88.53px 28.5px;
+    
+            background: $primary-bg;
+        }
+
+        //.about__header
+        &__header {
+            padding-right: 53.04px;
+        }
+
+        //.about__subtitle
+        &__subtitle {
+            margin: 0 0 16.34px;
+        }
+
+        //.about__description
+        &__description {
+            color: $light-font-color;
+
+            //.about__description *:not(:last-child)
+            & *:not(:last-child) {
+                margin: 0 0 8px;
+            }
+        }
+
+        //.about__text
+        &__text {
+            font-weight: 200;
+            line-height: 1.37;
+        }
+
+        //.about__img-container
+        &__img-container {
+            position: relative;
+    
+            display: block;
+    
+            width: 100%;
+    
+            margin: 0 auto 41.11px;
+            padding: 1px;
+        }
+    
+        //.about__img
+        &__img {
+            display: block;
+    
+            width: 100%;
+    
+            margin-top: -60%;
+        }
+        
+        //.about__btn
+        &__btn {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+    
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10.37px;
+        }
+    } 
+    
+    @media screen and (min-width: 1380px) {
+        // .about
+        & {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: strtch;
+        }
+        
+        // .about__layer-container
+        &__layer-container {
+            flex: 1 1 50%;
+        }
+        
+        // .about__layer
+        &__layer {
+            width: 100%;
+        }
+        
+        // .about__img
+        &__img {
+            position: absolute;
+            margin: 0;
+        }
+    }
+}

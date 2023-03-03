@@ -1,0 +1,58 @@
+// .page
+
+.page {
+    @media screen and (min-width: 320px) {
+        //.page__wrapper
+        &__wrapper {
+            overflow: hidden;
+
+            width: 100%;
+            min-width: 320px;
+            
+            background: $default-bg;
+        }
+
+        //.page__header
+        &__header {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            z-index: 100;
+
+            width: 100%;
+
+            background: $default-bg;
+        }
+
+        //.page__slider 
+        &__slider {
+            margin: 0 0 23.22px;
+        }
+
+        //.page__footer
+        &__footer {
+            padding: 25.47px 27.36px 26.32px;
+            
+            background: $primary-bg;
+
+            color: $light-font-color;
+        }
+    }
+
+    @media screen and (min-width: 1380px) {
+        // .page__header
+        &__header {
+            max-width: 1200px;
+    
+            margin: 0 auto;
+        }
+        
+        // .page__main
+        &__main {
+            max-width: 1200px;
+    
+            margin: 0 auto;
+        }
+    }
+}

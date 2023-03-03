@@ -1,0 +1,31 @@
+// .subtitle
+
+.subtitle {
+    @media screen and (min-width: 320px) {
+        font-size: 1.85em;
+        line-height: 1.73;
+
+        //.subtitle--min
+        &--min {
+            font-size: 1.42em;
+            line-height: 2.2;
+            text-transform: capitalize;
+        }
+
+        //.subtitle--accent
+        &--accent {
+            font-size: 1.71em;
+            line-height: 1.18;
+            color: $light-font-color;
+        }
+
+        //.subtitle--card
+        &--card {
+            font-size: 0.85em;
+            font-weight: 700;
+            line-height: 1.2;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+        }
+    }
+}

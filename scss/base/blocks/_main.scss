@@ -1,0 +1,54 @@
+//.main
+
+.main {
+    @media screen and (min-width: 320px) {
+        //.main__inner
+        &__inner {
+            padding: 0 10px;
+        }
+
+        //.main__catalogue
+        &__catalogue {
+            margin: 0 0 40px;
+
+            width: 100%;
+        }
+
+        //.main__about
+        &__about {
+            width: 100%;
+
+            margin: 0 0 48.36px;
+        }
+
+        //.main__features
+        &__features {
+            margin: 0 0 65.49px;
+        }
+
+        //main__price
+        &__price {
+            margin: 0 0 93px;
+            padding: 23.88px 10px 56.75px;
+
+            box-shadow: 0 0 10px $primary-shadow;
+            border-radius: 4px;
+
+            text-align: center;
+        }
+
+        //.main__carousel
+        &__carousel {
+            width: 100%;
+
+            margin: 0 0 44.99px;
+        }
+
+        //.main__seo
+        &__seo {
+            width: 100%;
+
+            margin: 0 0 92.53px;
+        }
+    } 
+}

@@ -1,0 +1,34 @@
+// .footer 
+
+.footer {
+    @media screen and (min-width: 320px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        //.footer__logo
+        &__logo {
+            margin: 0 0 41.84px;
+        }
+        
+        //.footer__address
+        &__address {
+            margin: 0 0 38.83px;
+        }
+
+        // .footer__social
+        &__social {
+            margin: 0 0 51.61px;
+        }
+
+        //.footer__copyright
+        &__copyright {
+            font-size: 0.85em;
+            line-height: 1.25;
+            text-transform: capitalize;
+            
+            opacity: 0.65;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+//.controls
+
+.controls {
+    @media screen and (min-width: 320px) {
+        //.controls__btn
+        &__btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+
+            //.controls__btn--prev
+            &--prev {
+                left: 0;
+            }
+
+            //.controls__btn--next
+            &--next {
+                right: 0;
+            }
+        }
+    }
+}

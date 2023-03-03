@@ -1,0 +1,27 @@
+// .adrress
+
+.address {
+    @media screen and (min-width: 320px) {
+        //.address__item 
+        &__item {
+            margin: 0 0 12.5px;
+        }
+        
+        //.address__link
+        &__link {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 15.73px;
+        }
+
+        //.address__icon
+        &__icon {
+            flex: 0 0 16px;
+            height: 16px;
+
+            fill: $default-bg;
+        }
+    }   
+}

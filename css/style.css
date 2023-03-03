@@ -47,7 +47,6 @@ table {
   border-spacing: 0;
 }
 
-/* main reset */
 *,
 *::before,
 *::after {
@@ -106,9 +105,6 @@ picture {
   pointer-events: none;
 }
 
-/* fonts */
-/* avenir-next */
-/* regular */
 @font-face {
   font-display: swap;
   font-family: "Avenir-next";
@@ -116,8 +112,6 @@ picture {
   font-weight: 400;
   font-style: normal;
 }
-/* gilroy */
-/* gilroylight */
 @font-face {
   font-display: swap;
   font-family: "Gilroy";
@@ -125,7 +119,6 @@ picture {
   font-weight: 300;
   font-style: normal;
 }
-/* gilroy regular */
 @font-face {
   font-display: swap;
   font-family: "Gilroy";
@@ -133,7 +126,6 @@ picture {
   font-weight: 400;
   font-style: normal;
 }
-/* gilroy medium */
 @font-face {
   font-display: swap;
   font-family: "Gilroy";
@@ -141,8 +133,6 @@ picture {
   font-weight: 500;
   font-style: normal;
 }
-/* ubuntu */
-/* ubuntu regular */
 @font-face {
   font-display: swap;
   font-family: "Ubuntu";
@@ -150,7 +140,6 @@ picture {
   font-weight: 400;
   font-style: normal;
 }
-/* ubuntu bold */
 @font-face {
   font-display: swap;
   font-family: "Ubuntu";
@@ -158,8 +147,6 @@ picture {
   font-weight: 700;
   font-style: normal;
 }
-/* inter */
-/* inter regular */
 @font-face {
   font-display: swap;
   font-family: "Inter";
@@ -167,8 +154,6 @@ picture {
   font-weight: 400;
   font-style: normal;
 }
-/* lato */
-/* lato extralight */
 @font-face {
   font-display: swap;
   font-family: "Lato";
@@ -176,7 +161,6 @@ picture {
   font-weight: 200;
   font-style: normal;
 }
-/* lato light */
 @font-face {
   font-display: swap;
   font-family: "Lato";
@@ -184,7 +168,6 @@ picture {
   font-weight: 300;
   font-style: normal;
 }
-/* lato regular */
 @font-face {
   font-display: swap;
   font-family: "Lato";
@@ -192,7 +175,6 @@ picture {
   font-weight: 400;
   font-style: normal;
 }
-/* lato medium */
 @font-face {
   font-display: swap;
   font-family: "Lato";
@@ -200,7 +182,6 @@ picture {
   font-weight: 500;
   font-style: normal;
 }
-/* lato bold */
 @font-face {
   font-display: swap;
   font-family: "Lato";
@@ -208,18 +189,19 @@ picture {
   font-weight: 700;
   font-style: normal;
 }
-/* variables */
-.document,
-.document__page {
+.document {
   font-family: "Lato", sans-serif;
   font-size: 14px;
   font-weight: 300;
   color: #00204a;
 }
-
 .document__page {
   position: relative;
   min-width: 320px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #00204a;
 }
 
 .link {
@@ -400,6 +382,19 @@ picture {
     background: #00204a;
     color: #ffffff;
   }
+}
+@media screen and (min-width: 1380px) {
+  .page__header {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .page__main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -438,6 +433,9 @@ picture {
     padding: 0;
     background: inherit;
   }
+}
+
+@media screen and (min-width: 320px) {
   .menu__line {
     position: relative;
     display: block;
@@ -491,6 +489,9 @@ picture {
         -ms-transform: rotate(-45deg) scale(1.25) translate(3px, -5px);
             transform: rotate(-45deg) scale(1.25) translate(3px, -5px);
   }
+}
+
+@media screen and (min-width: 320px) {
   .logo__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,6 +543,9 @@ picture {
     font-weight: 700;
     line-height: 1;
   }
+}
+
+@media screen and (min-width: 320px) {
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -612,6 +616,9 @@ picture {
             align-items: center;
     gap: 15.5px;
   }
+}
+
+@media screen and (min-width: 320px) {
   .slider__title {
     display: none;
   }
@@ -653,6 +660,14 @@ picture {
     line-height: 1.2;
     color: #ffffff;
   }
+}
+@media screen and (min-width: 1380px) {
+  .slider__img-container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .controls__btn {
     position: absolute;
     top: 50%;
@@ -666,6 +681,9 @@ picture {
   .controls__btn--next {
     right: 0;
   }
+}
+
+@media screen and (min-width: 320px) {
   .main__inner {
     padding: 0 10px;
   }
@@ -696,6 +714,9 @@ picture {
     width: 100%;
     margin: 0 0 92.53px;
   }
+}
+
+@media screen and (min-width: 320px) {
   .catalogue__header {
     margin: 0 0 48.38px;
   }
@@ -750,6 +771,17 @@ picture {
             align-items: center;
     gap: 7.43px;
   }
+}
+@media screen and (min-width: 1380px) {
+  .catalogue__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .subtitle {
     font-size: 1.85em;
     line-height: 1.73;
@@ -771,6 +803,9 @@ picture {
     letter-spacing: 0.25em;
     text-transform: uppercase;
   }
+}
+
+@media screen and (min-width: 320px) {
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -849,6 +884,35 @@ picture {
             align-items: center;
     gap: 10.37px;
   }
+}
+@media screen and (min-width: 1380px) {
+  .about {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: strtch;
+        -ms-flex-align: strtch;
+            align-items: strtch;
+  }
+  .about__layer-container {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .about__layer {
+    width: 100%;
+  }
+  .about__img {
+    position: absolute;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .features {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -920,6 +984,25 @@ picture {
   .features__column--img {
     display: none;
   }
+}
+@media screen and (min-width: 1380px) {
+  .features {
+    gap: 77.19px;
+  }
+  .features__column--img {
+    display: block;
+  }
+  .features__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 320px) {
   .price__header {
     margin: 0 0 24px;
   }
@@ -982,6 +1065,9 @@ picture {
             align-items: center;
     gap: 10.37px;
   }
+}
+
+@media screen and (min-width: 320px) {
   .carousel__container {
     position: relative;
     width: 100%;
@@ -1016,6 +1102,9 @@ picture {
     display: block;
     width: 100%;
   }
+}
+
+@media screen and (min-width: 320px) {
   .seo {
     width: 100%;
   }
@@ -1052,6 +1141,9 @@ picture {
     display: block;
     width: 100%;
   }
+}
+
+@media screen and (min-width: 320px) {
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1082,6 +1174,9 @@ picture {
     text-transform: capitalize;
     opacity: 0.65;
   }
+}
+
+@media screen and (min-width: 320px) {
   .address__item {
     margin: 0 0 12.5px;
   }
@@ -1108,6 +1203,9 @@ picture {
     height: 16px;
     fill: #ffffff;
   }
+}
+
+@media screen and (min-width: 320px) {
   .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1145,6 +1243,9 @@ picture {
             flex: 0 0 20px;
     height: 20px;
   }
+}
+
+@media screen and (min-width: 320px) {
   .copyright {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1160,63 +1261,5 @@ picture {
         -ms-flex-align: center;
             align-items: center;
     gap: 43px;
-  }
-}
-@media screen and (min-width: 1380px) {
-  .page__header {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .page__main {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  .slider__img-container {
-    width: 100%;
-  }
-  .catalogue__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .about {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: strtch;
-        -ms-flex-align: strtch;
-            align-items: strtch;
-  }
-  .about__layer-container {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 50%;
-            flex: 1 1 50%;
-  }
-  .about__layer {
-    width: 100%;
-  }
-  .about__img {
-    position: absolute;
-    margin: 0;
-  }
-  /* .features */
-  .features {
-    gap: 77.19px;
-  }
-  .features__column--img {
-    display: block;
-  }
-  .features__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
   }
 }

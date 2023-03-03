@@ -1,0 +1,64 @@
+//.seo
+
+.seo {
+    @media screen and (min-width:320px) {
+        width: 100%;
+
+        //.seo__header
+        &__header {
+            width: 100%;
+
+            margin: 0 0 26.5px;
+
+            // .seo__header *:not(:last-child)
+            & *:not(:last-child) {
+                margin: 0 0 10px;
+            }
+        }
+
+        //.seo__subtitle
+        &__subtitle {
+            margin: 0;
+
+            font-size: 2.57em;
+            line-height: 1.25;
+        }
+
+        //.seo__description
+        &__description {
+            //.seo__description *:not(:last-child)
+            & *:not(:last-child) {
+                margin: 0 0 10px;
+            }
+        }
+
+        //.seo__lead 
+        &__lead {
+            font-size: 2.14em;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+        //.seo__content
+        &__content {
+            margin: 0 0 30px;
+
+            //.seo__content *:not(:last-child)
+            & *:not(:last-child) {
+                margin: 0 0 10px;
+            }
+        }
+
+        //.seo__text
+        &__text {
+            line-height: 1.6;
+        }
+        
+        //.seo__link
+        &__link {
+            display: block;
+
+            width: 100%;
+        }
+    }  
+}

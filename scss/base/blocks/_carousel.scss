@@ -1,0 +1,46 @@
+//.carousel
+
+.carousel {
+    @media screen and (min-width: 320px) {
+        //.carousel__container
+        &__container {
+            position: relative;
+
+            width: 100%;
+        }
+        
+        //.carousel__list
+        &__list {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        //.carousel__item
+        &__item {
+            display: block;
+
+            width: 100%;
+
+            //.carousel__item--hidden
+            &--hidden {
+                display: none;
+            }
+        }
+
+        //.carousel__img-container
+        &__img-container {
+            display: block;
+
+            width: 100%;
+        }
+        
+        //.carousel__img
+        &__img {
+            display: block;
+
+            width: 100%;
+        }
+    }
+}
